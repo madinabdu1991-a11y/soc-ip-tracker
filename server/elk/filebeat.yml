@@ -1,0 +1,7 @@
+filebeat.inputs:
+- type: filestream
+  paths:
+    - /var/log/nginx/soc_access.log
+
+output.elasticsearch:
+  hosts: ["http://localhost:9200"]
